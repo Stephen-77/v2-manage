@@ -1,28 +1,40 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Main></Main>
+    <login></login>
+    <!-- <router-link to="/hello">hello</router-link>
+    <router-view></router-view> -->
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Login from './views/Login.vue';
+import Main from "./views/Main.vue";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+    // pageA,
+    Main,
+    Login,
+  },
+  data() {
+    return {
+      
+    }
+  },
+  mounted(){
+    // console.log(JSON.stringify(this.orderData));
   }
-}
+};
 </script>
 
 <style>
+html,
+body {
+  margin: 0 auto;
+  padding: 0;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  height: 100vh;
 }
 </style>

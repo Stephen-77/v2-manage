@@ -1,5 +1,7 @@
 # vue-manage
+项目概述: 基础的后台管理系统，实现登录，个人信息，权限管理
 
+技术选型：vue2 + vuex + elementUI+ echarts + mock
 ## Project setup
 ```
 npm install
